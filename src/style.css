@@ -29,13 +29,31 @@
   width: 40%;
   background-color: rgba(0, 0, 0, 0.5);
 }
+#menuContainer{
+  width: 100%;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+}
+#pizzaContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: .25fr 2fr 2fr;
+}
+#pizzaLabel{
+  grid-column: 1 / 4;
+}
 .myBG{
     background-color: #F4F4F5;
+}
+.menuCard > img{
+  height: 225px;
+  width: 225px;
 }
 body{
     margin: 0;
 }
-p{
+#signText > p{
   margin: 0;
   padding: 0;
   font-size: 60px;
