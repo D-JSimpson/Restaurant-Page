@@ -1,0 +1,23 @@
+#pizzaTake, #pizzaTakeTwo, #pizzaTakeThree{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+  }
+.myBG{
+    background-color: #F4F4F5;
+}
+body{
+    margin: 0;
+}
+ul{
+    position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  z-index: 5;
+}
