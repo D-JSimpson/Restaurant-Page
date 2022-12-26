@@ -29,6 +29,22 @@ content.id = "content";
 
 body.appendChild(content);
 
+const storeSign = document.createElement('div');
+content.appendChild(storeSign);
+storeSign.id = "sign";
+let storeSignText = document.createElement('div');
+storeSignText.id = 'signText';
+let generic = document.createElement('p');
+    generic.innerText = "GENERIC";
+let pizza = document.createElement('p');
+    pizza.innerText = "PIZZA";
+let shop = document.createElement('p');
+    shop.innerText = "SHOP";
+storeSignText.appendChild(generic);
+storeSignText.appendChild(pizza);
+storeSignText.appendChild(shop);
+storeSign.appendChild(storeSignText);
+
 const navBar = document.createElement("ul");
 let home = document.createElement("li");
     home.innerText = "Home";
