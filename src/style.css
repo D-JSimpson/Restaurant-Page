@@ -39,12 +39,14 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: .25fr 2fr 2fr;
 }
-#sidesContainer{
+#sidesContainer,
+#drinksContainer{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 #pizzaLabel, 
-#sidesContainerLabel{
+#sidesContainerLabel,
+#drinksContainerLabel{
   grid-column: 1 / 4;
   font-size: 48px;
   background-color: #0F172A;

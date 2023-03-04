@@ -7,6 +7,9 @@ import spinach from './imgs/SpinachFeta.jpg';
 import wings from './imgs/chickenWing.jpg';
 import brownies from './imgs/brownies.jpg';
 import fries from './imgs/frenchFries.jpg';
+import fanta from './imgs/fanta.jpeg';
+import sprite from './imgs/sprite.jpeg';
+import coke from './imgs/coke.jpeg';
 
 export default function menu(){
     //content.innerHtml = "";
@@ -144,8 +147,48 @@ export default function menu(){
         friesCard.appendChild(friesCardLabel);
         sidesContainer.appendChild(friesCard);
 
+    //Drinks
+    const drinksContainer = document.createElement("div");
+          drinksContainer.id = "drinksContainer";
+    let drinksContainerLabel = document.createElement("div");
+        drinksContainerLabel.id = "drinksContainerLabel";
+        drinksContainerLabel.innerText = "DRINKS"
+    drinksContainer.appendChild(drinksContainerLabel);
+
+        let fantaCard = document.createElement('div');
+            fantaCard.classList.add('menuCard');
+        let fantaCardLabel = document.createElement('p');
+            fantaCardLabel.innerText = "Fanta";
+        let fantaImg = new Image();
+            fantaImg.src = fanta;
+        fantaCard.appendChild(fantaImg);
+        fantaCard.appendChild(fantaCardLabel);
+        drinksContainer.appendChild(fantaCard); 
+
+        let cokeCard = document.createElement('div');
+            cokeCard.classList.add('menuCard');
+        let cokeCardLabel = document.createElement('p');
+            cokeCardLabel.innerText = "Coke";
+        let cokeImg = new Image();
+            cokeImg.src = coke;
+        cokeCard.appendChild(cokeImg);
+        cokeCard.appendChild(cokeCardLabel);
+        drinksContainer.appendChild(cokeCard); 
+
+        let spriteCard = document.createElement('div');
+            spriteCard.classList.add('menuCard');
+        let spriteCardLabel = document.createElement('p');
+            spriteCardLabel.innerText = "Sprite";
+        let spriteImg = new Image();
+            spriteImg.src = sprite;
+        spriteCard.appendChild(spriteImg);
+        spriteCard.appendChild(spriteCardLabel);
+        drinksContainer.appendChild(spriteCard); 
+
+
     menuContainer.appendChild(pizzaContainer);
     menuContainer.appendChild(sidesContainer);
+    menuContainer.appendChild(drinksContainer)
     content.appendChild(menuContainer);
 
 }
