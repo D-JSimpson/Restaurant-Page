@@ -11,6 +11,7 @@ content.id = "content";
 
 body.appendChild(content);
 
+//Generate A Navbar that Will always be there
 const navBar = document.createElement("ul");
     let homeBtn = document.createElement("li");
         homeBtn.innerText = "Home";

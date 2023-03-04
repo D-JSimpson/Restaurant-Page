@@ -6,7 +6,7 @@ import pepperoni from './imgs/Pepperoni.png';
 import spinach from './imgs/SpinachFeta.jpg';
 
 export default function menu(){
-    content.innerHtml = "";
+    //content.innerHtml = "";
 
     const menuContainer = document.createElement('div');
           menuContainer.id = 'menuContainer';
@@ -45,7 +45,7 @@ export default function menu(){
         cheesePizzaCard.appendChild(cheeseLabel);
           pizzaContainer.appendChild(cheesePizzaCard);
 
-    //Hawaiian Car
+    //Hawaiian Card
     let hawaiianPizzaCard = document.createElement('div');
         hawaiianPizzaCard.classList.add('menuCard');
 
