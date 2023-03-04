@@ -4,12 +4,17 @@ import hawaiian from './imgs/hawaiian.jpg';
 import margherita from './imgs/Margherita.jpg';
 import pepperoni from './imgs/Pepperoni.png';
 import spinach from './imgs/SpinachFeta.jpg';
+import wings from './imgs/chickenWing.jpg';
+import brownies from './imgs/brownies.jpg';
+import fries from './imgs/frenchFries.jpg';
 
 export default function menu(){
     //content.innerHtml = "";
 
     const menuContainer = document.createElement('div');
           menuContainer.id = 'menuContainer';
+
+    //Pizza
     const pizzaContainer = document.createElement('div');
           pizzaContainer.id = 'pizzaContainer';
     let pizzaLabel = document.createElement('p');
@@ -17,89 +22,130 @@ export default function menu(){
         pizzaLabel.id = 'pizzaLabel';
           pizzaContainer.appendChild(pizzaLabel);
 
-    //Buffalo Card
-    let buffaloPizzaCard = document.createElement('div');
-        buffaloPizzaCard.classList.add('menuCard');
+        //Buffalo Card
+        let buffaloPizzaCard = document.createElement('div');
+            buffaloPizzaCard.classList.add('menuCard');
 
-    let buffaloLabel = document.createElement('p');
-        buffaloLabel.innerText = "Buffalo Pizza";
+        let buffaloLabel = document.createElement('p');
+            buffaloLabel.innerText = "Buffalo Pizza";
 
-    let buffaloPizza = new Image();
-        buffaloPizza.src = buffalo;
+        let buffaloPizza = new Image();
+            buffaloPizza.src = buffalo;
 
-        buffaloPizzaCard.appendChild(buffaloPizza);
-        buffaloPizzaCard.appendChild(buffaloLabel);
-          pizzaContainer.appendChild(buffaloPizzaCard);
+            buffaloPizzaCard.appendChild(buffaloPizza);
+            buffaloPizzaCard.appendChild(buffaloLabel);
+            pizzaContainer.appendChild(buffaloPizzaCard);
 
-    //Cheese Card
-    let cheesePizzaCard = document.createElement('div');
-        cheesePizzaCard.classList.add('menuCard');
+        //Cheese Card
+        let cheesePizzaCard = document.createElement('div');
+            cheesePizzaCard.classList.add('menuCard');
 
-    let cheeseLabel = document.createElement('p');
-        cheeseLabel.innerText = "Cheese Pizza";
+        let cheeseLabel = document.createElement('p');
+            cheeseLabel.innerText = "Cheese Pizza";
 
-    let cheesePizza = new Image();
-        cheesePizza.src = cheese;
+        let cheesePizza = new Image();
+            cheesePizza.src = cheese;
 
-        cheesePizzaCard.appendChild(cheesePizza);
-        cheesePizzaCard.appendChild(cheeseLabel);
-          pizzaContainer.appendChild(cheesePizzaCard);
+            cheesePizzaCard.appendChild(cheesePizza);
+            cheesePizzaCard.appendChild(cheeseLabel);
+            pizzaContainer.appendChild(cheesePizzaCard);
 
-    //Hawaiian Card
-    let hawaiianPizzaCard = document.createElement('div');
-        hawaiianPizzaCard.classList.add('menuCard');
+        //Hawaiian Card
+        let hawaiianPizzaCard = document.createElement('div');
+            hawaiianPizzaCard.classList.add('menuCard');
 
-    let hawaiianLabel = document.createElement('p');
-        hawaiianLabel.innerText = "Hawaiian Pizza";
+        let hawaiianLabel = document.createElement('p');
+            hawaiianLabel.innerText = "Hawaiian Pizza";
 
-    let hawaiianPizza = new Image();
-        hawaiianPizza.src = hawaiian;
+        let hawaiianPizza = new Image();
+            hawaiianPizza.src = hawaiian;
 
-        hawaiianPizzaCard.appendChild(hawaiianPizza);
-        hawaiianPizzaCard.appendChild(hawaiianLabel);
-          pizzaContainer.appendChild(hawaiianPizzaCard);
+            hawaiianPizzaCard.appendChild(hawaiianPizza);
+            hawaiianPizzaCard.appendChild(hawaiianLabel);
+            pizzaContainer.appendChild(hawaiianPizzaCard);
 
-    //Margherita Card
-    let margheritaPizzaCard = document.createElement('div');
-        margheritaPizzaCard.classList.add('menuCard');
+        //Margherita Card
+        let margheritaPizzaCard = document.createElement('div');
+            margheritaPizzaCard.classList.add('menuCard');
 
-    let margheritaLabel = document.createElement('p');
-        margheritaLabel.innerText = "Margherita Pizza";
+        let margheritaLabel = document.createElement('p');
+            margheritaLabel.innerText = "Margherita Pizza";
 
-    let margheritaPizza = new Image();
-        margheritaPizza.src = margherita;
+        let margheritaPizza = new Image();
+            margheritaPizza.src = margherita;
 
-        margheritaPizzaCard.appendChild(margheritaPizza);
-        margheritaPizzaCard.appendChild(margheritaLabel);
-          pizzaContainer.appendChild(margheritaPizzaCard);
+            margheritaPizzaCard.appendChild(margheritaPizza);
+            margheritaPizzaCard.appendChild(margheritaLabel);
+            pizzaContainer.appendChild(margheritaPizzaCard);
 
-    //Cheese Card
-    let pepperoniPizzaCard = document.createElement('div');
-        pepperoniPizzaCard.classList.add('menuCard');
+        //Cheese Card
+        let pepperoniPizzaCard = document.createElement('div');
+            pepperoniPizzaCard.classList.add('menuCard');
 
-    let pepperoniLabel = document.createElement('p');
-        pepperoniLabel.innerText = "Pepperoni Pizza";
+        let pepperoniLabel = document.createElement('p');
+            pepperoniLabel.innerText = "Pepperoni Pizza";
 
-    let pepperoniPizza = new Image();
-        pepperoniPizza.src = pepperoni;
+        let pepperoniPizza = new Image();
+            pepperoniPizza.src = pepperoni;
 
-        pepperoniPizzaCard.appendChild(pepperoniPizza);
-        pepperoniPizzaCard.appendChild(pepperoniLabel);
-          pizzaContainer.appendChild(pepperoniPizzaCard);
+            pepperoniPizzaCard.appendChild(pepperoniPizza);
+            pepperoniPizzaCard.appendChild(pepperoniLabel);
+            pizzaContainer.appendChild(pepperoniPizzaCard);
+        
+        //Cheese Card
+        let spinachPizzaCard = document.createElement('div');
+            spinachPizzaCard.classList.add('menuCard');
+
+        let spinachLabel = document.createElement('p');
+            spinachLabel.innerText = "Spinach Pizza";
+
+        let spinachPizza = new Image();
+            spinachPizza.src = spinach;
+
+            spinachPizzaCard.appendChild(spinachPizza);
+            spinachPizzaCard.appendChild(spinachLabel);
+            pizzaContainer.appendChild(spinachPizzaCard);
     
-    //Cheese Card
-    let spinachPizzaCard = document.createElement('div');
-        spinachPizzaCard.classList.add('menuCard');
+    //Sides
+    const sidesContainer = document.createElement("div");
+          sidesContainer.id = "sidesContainer";
+    let sidesContainerLabel = document.createElement("div");
+        sidesContainerLabel.id = "sidesContainerLabel";
+        sidesContainerLabel.innerText = "SIDES"
+    sidesContainer.appendChild(sidesContainerLabel);
 
-    let spinachLabel = document.createElement('p');
-        spinachLabel.innerText = "Spinach Pizza";
+        let wingsCard = document.createElement('div');
+            wingsCard.classList.add('menuCard');
+        let wingsCardLabel = document.createElement('p');
+            wingsCardLabel.innerText = "Chicken Wings";
+        let wingsImg = new Image();
+            wingsImg.src = wings;
+        wingsCard.appendChild(wingsImg);
+        wingsCard.appendChild(wingsCardLabel);
+        sidesContainer.appendChild(wingsCard);
 
-    let spinachPizza = new Image();
-        spinachPizza.src = spinach;
+        let browniesCard = document.createElement('div');
+            browniesCard.classList.add('menuCard');
+        let browniesLabel = document.createElement('p');
+            browniesLabel.innerText = "Brownies";
+        let browniesImg = new Image();
+            browniesImg.src = brownies;
+        browniesCard.appendChild(browniesImg);
+        browniesCard.appendChild(browniesLabel);
+        sidesContainer.appendChild(browniesCard);
 
-        spinachPizzaCard.appendChild(spinachPizza);
-        spinachPizzaCard.appendChild(spinachLabel);
-          pizzaContainer.appendChild(spinachPizzaCard);
-    content.appendChild(pizzaContainer);
+        let friesCard = document.createElement('div');
+            friesCard.classList.add('menuCard');
+        let friesCardLabel = document.createElement('p');
+            friesCardLabel.innerText = "French Fries";
+        let friesImg = new Image();
+            friesImg.src = fries;
+        friesCard.appendChild(friesImg);
+        friesCard.appendChild(friesCardLabel);
+        sidesContainer.appendChild(friesCard);
+
+    menuContainer.appendChild(pizzaContainer);
+    menuContainer.appendChild(sidesContainer);
+    content.appendChild(menuContainer);
 
 }

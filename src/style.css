@@ -31,7 +31,6 @@
 }
 #menuContainer{
   width: 100%;
-  background-color: blue;
   display: flex;
   flex-direction: column;
 }
@@ -40,7 +39,12 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: .25fr 2fr 2fr;
 }
-#pizzaLabel{
+#sidesContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#pizzaLabel, 
+#sidesContainerLabel{
   grid-column: 1 / 4;
   font-size: 48px;
   background-color: #0F172A;
@@ -60,6 +64,7 @@
 .menuCard > img{
   height: 20vw;
   width: 20vw;
+  border-radius: 50px;
 }
 body{
     margin: 0;
