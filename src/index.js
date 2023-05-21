@@ -1,6 +1,7 @@
 import './style.css';
 import home from './home.js';
 import menu from './menu.js';
+import contact from './contact.js';
 
 
 const body = document.querySelector("body");
@@ -24,6 +25,7 @@ const navBar = document.createElement("ul");
     let contactBtn = document.createElement("li");
         contactBtn.innerText = "Contact"; 
         contactBtn.id = 'contact'; 
+        contactBtn.addEventListener('click', () => {content.innerHTML = ""; contact()});
     navBar.appendChild(homeBtn); navBar.appendChild(menuBtn); navBar.appendChild(contactBtn);
 
     body.appendChild(navBar);
