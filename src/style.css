@@ -32,6 +32,28 @@
   width: 40%;
   background-color: rgba(0, 0, 0, 0.5);
 }
+#contactSign{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  width: 100%;
+  color: white;
+  padding-top: 5vh;
+}
+#contactSignText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  background-color: #0F172A;
+  border-radius: 30px;
+}
+#contactContainer{
+  display: flex;
+  flex-direction: column;
+}
 #menuContainer{
   width: 100%;
   display: flex;
@@ -74,7 +96,8 @@
 body{
     margin: 0;
 }
-#signText > p{
+#signText > p,
+#contactSignText > p{
   margin: 0;
   padding: 0;
   font-size: 60px;
